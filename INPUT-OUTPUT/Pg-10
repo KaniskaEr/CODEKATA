@@ -1,0 +1,26 @@
+Write a code to get the input in the given format and print the output in the given format.
+
+Input Description:
+A single line contains a string.
+
+Output Description:
+Print the characters in a string separated by comma.
+
+Sample Input :
+guvi
+Sample Output :
+g,u,v,i
+***************************************************************************************************
+#include<stdio.h>
+#include<string.h>
+void main(){
+    char ch[100];
+    scanf("%s",&ch);
+    int len=strlen(ch);
+    for(int i=0;i<len;i++)
+    {
+        printf("%c",ch[i]);
+        if(i<len-1)
+        printf(",");
+    }
+}
